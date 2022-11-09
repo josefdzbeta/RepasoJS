@@ -3,6 +3,7 @@
 //Añadir al final del array
 // meses.push('Abril')
 
+//Forma imperativa
 const carrito = []
 
 //Definir un producto
