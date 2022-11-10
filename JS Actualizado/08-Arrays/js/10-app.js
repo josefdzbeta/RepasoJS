@@ -19,7 +19,7 @@ carrito.map(function(producto){
 const nuevoArray = carrito.map(function(producto){
     return `${producto.nombre} --Precio: ${producto.precio}`;
 })
-const nuevoArray2 = carrito.forEach(function(producto){
+const nuevoArray2 = carrito.forEach(function(producto){ // no es valido
     return `${producto.nombre} --Precio: ${producto.precio}`;
 })
 
