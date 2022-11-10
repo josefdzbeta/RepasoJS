@@ -15,7 +15,7 @@ carrito.forEach(function(producto){
 carrito.map(function(producto){
     console.log(`${producto.nombre} --Precio: ${producto.precio}`);
 })
-
+//Nuevo array si puede guardar el valor porque .map genera un nuevo array con los valores
 const nuevoArray = carrito.map(function(producto){
     return `${producto.nombre} --Precio: ${producto.precio}`;
 })
