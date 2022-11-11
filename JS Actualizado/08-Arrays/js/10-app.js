@@ -1,10 +1,10 @@
 const carrito = [
-    {nombre: 'Monitor de 27 pulgadas'},
-    {nombre: 'Televisor'},
-    {nombre: 'Movil'},
-    {nombre: 'Xbox'},
-    {nombre: 'SmarWatch'},
-    {nombre: 'Agenda'},
+    {nombre: 'Monitor de 27 pulgadas', precio: 100},
+    {nombre: 'Televisor', precio: 200},
+    {nombre: 'Movil', precio: 300},
+    {nombre: 'Xbox', precio: 400},
+    {nombre: 'SmarWatch', precio: 500},
+    {nombre: 'Agenda', precio: 600},
 ]
 
 //carrito es el conjunto, producto es cada objeto
