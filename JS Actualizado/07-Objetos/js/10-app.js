@@ -10,7 +10,7 @@ const medidas = {
 };
 
 console.log(producto);
-console.log(medida);
+console.log(medidas);
 
 //Unir objetos
 const resultado = Object.assign(producto, medidas);
