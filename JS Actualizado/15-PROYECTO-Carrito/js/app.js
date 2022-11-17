@@ -13,6 +13,13 @@ function cargarEventListeners(){
 
     //Eliminar cursos del carrito
     carrito.addEventListener('click', eliminarCurso);
+
+    //Vaciar el carrito
+    vaciarCarritoBtn.addEventListener('click', () =>{
+        articulosCarrito = [];//Vaciamos el array de carrito
+
+        limpiarHTML(); //Eliminamos todo el HTML
+    });
 }
 
 //Funciones
@@ -31,8 +38,7 @@ function agregarCurso(e){
 function eliminarCurso(e){
     console.log(e.target.classList);
     if(e.target.classList.contains('borrar-curso')){
-        const cursoId = e.target.getAttribute('data-id')
-
+        const cursoId = e.target.getAttribute('data-id');
         //Elimina elementos del array de artículosCarrito por el data-id
         articulosCarrito = articulosCarrito.filter((curso) => curso.id !== cursoId);
         console.log(articulosCarrito);
@@ -95,7 +101,7 @@ function carritoHTML(){
 
         const row = document.createElement('tr');
         row.innerHTML= `
-            <td><img src="${imagen} width="100"> </td>
+            <td><img src="${imagen}" width="100"> </td>
             <td>${titulo}</td>
             <td>${precio}</td>
             <td>${cantidad}</td>
