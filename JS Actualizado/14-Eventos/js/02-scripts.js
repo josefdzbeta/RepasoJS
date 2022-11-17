@@ -1,11 +1,11 @@
 //Eventos de mouse
-const nav = document.querySelector('.navegacion')
+const nav = document.querySelector('.navegacion');
 
 //Evento
 
 nav.addEventListener('click', () => {
     console.log('click en nav');
-})
+});
 // nav.addEventListener('mouseenter', () => {
 //     console.log('entrando en la navegacion');
 //     nav.style.backgroundColor = 'transparent'
@@ -24,4 +24,4 @@ nav.addEventListener('click', () => {
 // })
 nav.addEventListener('dblclick', () => {
     
-})
+});

@@ -5,7 +5,7 @@ const carrito = [
     {nombre: 'Xbox'},
     {nombre: 'SmarWatch'},
     {nombre: 'Agenda'},
-]
+];
 
 for(let i=0; i<carrito.length; i++){
 
@@ -17,4 +17,4 @@ for(let i=0; i<carrito.length; i++){
 carrito.forEach(function(producto){
     console.log(`${producto.nombre} --Precio: ${producto.precio}`);
     
-})
+});

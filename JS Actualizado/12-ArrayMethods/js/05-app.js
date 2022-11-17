@@ -7,16 +7,16 @@ const carrito = [
     { nombre: 'Audifonos', precio: 300 },
     { nombre: 'Teclado', precio: 400 },
     { nombre: 'Celular', precio: 700 },
-]
+];
 
 
 //Con un for each
-let resultado = ''
+let resultado = '';
 carrito.forEach((producto, index)=>{
     if(producto.nombre === 'Tablet'){
-        resultado = carrito[index]
+        resultado = carrito[index];
     }
-})
+});
 console.log(resultado);
 
 
@@ -24,7 +24,7 @@ console.log(resultado);
 //Con .find
 //Solo devuelve la primera condición que se cumpla
 const resultado2 = carrito.find((producto) => {
-  return  producto.precio === 100
-})
+  return  producto.precio === 100;
+});
 
 console.log(resultado2);

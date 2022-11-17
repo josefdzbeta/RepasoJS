@@ -9,17 +9,17 @@ const carrito = [
     { nombre: 'Audifonos', precio: 300 },
     { nombre: 'Teclado', precio: 400 },
     { nombre: 'Celular', precio: 700 },
-]
+];
 
 //Spread operator con array de indices
-const meses2 = [...meses, 'Agosto']
+const meses2 = [...meses, 'Agosto'];
 
 
 console.log(meses2);
 
 //Spread operator o Rest operator con objetos
-const producto = { nombre: 'Disco duro', precio: 300} //Objeto
+const producto = { nombre: 'Disco duro', precio: 300}; //Objeto
 
 //No utilizamos el rest operator al añadir un objeto al array de objetos
-const carrito2 = [...carrito, producto]
+const carrito2 = [...carrito, producto];
 console.log(carrito2);

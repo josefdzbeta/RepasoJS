@@ -1,6 +1,6 @@
-const dinero = 300
-const totalAPagar = 500
-const tarjeta = true
+const dinero = 300;
+const totalAPagar = 500;
+const tarjeta = true;
 
 
 //Si la primera condición se ejecuta, la segunda no se ejecuta

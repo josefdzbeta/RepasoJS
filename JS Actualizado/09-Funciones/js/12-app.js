@@ -5,14 +5,14 @@ const carrito = [
     {nombre: 'Xbox'},
     {nombre: 'SmarWatch'},
     {nombre: 'Agenda'},
-]
+];
 
 
-const nuevoArray = carrito.map(  producto  => `${producto.nombre} --Precio: ${producto.precio}`)
+const nuevoArray = carrito.map(  producto  => `${producto.nombre} --Precio: ${producto.precio}`);
 
 carrito.forEach((producto) => { 
     console.log(`${producto.nombre} --Precio: ${producto.precio}`); 
-})
+});
 
 console.log(nuevoArray); // Si es posible porque map genera un nuevo array y se puede guardar en una variable
 console.log(nuevoArray2); //devuelve undefined

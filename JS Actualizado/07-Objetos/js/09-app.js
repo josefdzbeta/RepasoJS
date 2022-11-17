@@ -1,14 +1,14 @@
-'use strict'
+'use strict';
 
 const producto = {
     nombre: 'monitor de 20 pulgadas',
     precio: 300,
     disponible: true
-}
+};
 
 
 //Congelar un objeto
-Object.seal(producto)
+Object.seal(producto);
 // producto.imagen = 'imagen.jpg'
 // Object.freeze(producto)
 

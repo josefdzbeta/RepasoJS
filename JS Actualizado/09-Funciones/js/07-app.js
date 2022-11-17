@@ -1,15 +1,15 @@
 //Llamadas entre funciones
-iniciarApp()
+iniciarApp();
 
 function iniciarApp(){
 
     console.log('iniciando app');
-    segundaFuncion()
+    segundaFuncion();
 }
 
 function segundaFuncion() {
     console.log('Desde la segunda función');
-    usuarioAutenticado('Jose')
+    usuarioAutenticado('Jose');
 }
 
 function usuarioAutenticado(usuario){

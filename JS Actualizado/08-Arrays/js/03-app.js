@@ -1,5 +1,5 @@
 //Recorer Array
-const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio']
+const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio'];
 
 //Saber longitud de array
 console.log(meses.length);

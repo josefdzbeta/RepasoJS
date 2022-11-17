@@ -15,10 +15,10 @@ const reproductor = {
     crearPlaylist: function(nombre){
         console.log(`creando playlist ${nombre}`);
     }
-}
+};
 
-reproductor.reproducir(30)
-reproductor.reproducir(20)
-reproductor.pausar()
-reproductor.borrar(30)
-reproductor.crearPlaylist('Existos España')
+reproductor.reproducir(30);
+reproductor.reproducir(20);
+reproductor.pausar();
+reproductor.borrar(30);
+reproductor.crearPlaylist('Existos España');

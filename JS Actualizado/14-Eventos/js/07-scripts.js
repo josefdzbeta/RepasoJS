@@ -12,4 +12,4 @@ cardDiv.addEventListener('click', (e) => {
         console.log('hiciste click en titulo');    
 
     }
-})
+});

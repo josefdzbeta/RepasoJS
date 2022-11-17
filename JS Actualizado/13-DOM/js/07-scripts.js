@@ -4,9 +4,9 @@
 // encabezado.style.fontFamily = 'Arial'
 // encabezado.style.textTransform = 'uppercase'
 
-const card = document.querySelector('.card')
-card.classList.add('nueva-clase', 'segunda-clase')
-card.classList.remove('nueva-clase', 'segunda-clase')
+const card = document.querySelector('.card');
+card.classList.add('nueva-clase', 'segunda-clase');
+card.classList.remove('nueva-clase', 'segunda-clase');
 console.log(card.classList);
 
 

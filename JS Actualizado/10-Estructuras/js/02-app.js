@@ -1,5 +1,5 @@
-const puntuacion = 100
-const puntuacion2 = 1000
+const puntuacion = 100;
+const puntuacion2 = 1000;
 
 // != es diferente / == igual a / === compara valor y tipo (Operador estricto)
 

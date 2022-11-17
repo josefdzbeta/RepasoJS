@@ -1,5 +1,5 @@
-const producto = 'Monitor 20 pulgadas'
-const precio = '20 USD'
+const producto = 'Monitor 20 pulgadas';
+const precio = '20 USD';
 
 console.log(producto.concat(precio));
 console.log(producto.concat('En descuento'));

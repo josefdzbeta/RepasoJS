@@ -1,4 +1,4 @@
-let puntuacion = 5
+let puntuacion = 5;
 
 
 

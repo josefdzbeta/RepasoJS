@@ -15,14 +15,14 @@ const reproductor = {
     get obtenerCancion(){
         console.log(`${this.cancion}`);
     }
-}
+};
 
-reproductor.nuevaCancion = 'Enter Sandman'
-reproductor.obtenerCancion()
+reproductor.nuevaCancion = 'Enter Sandman';
+reproductor.obtenerCancion();
 
-reproductor.reproducir(30)
-reproductor.reproducir(20)
-reproductor.pausar()
-reproductor.borrar(30)
-reproductor.crearPlaylist('Existos España')
-reproductor.reproducirPlaylist('Existos España')
+reproductor.reproducir(30);
+reproductor.reproducir(20);
+reproductor.pausar();
+reproductor.borrar(30);
+reproductor.crearPlaylist('Existos España');
+reproductor.reproducirPlaylist('Existos España');

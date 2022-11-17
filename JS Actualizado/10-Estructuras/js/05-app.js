@@ -1,10 +1,10 @@
 //Switch case
 
-const metodoPago = 'efectivo'
+const metodoPago = 'efectivo';
 
 switch (metodoPago) {
     case "efectivo":
-        pagar()
+        pagar();
         console.log(`Pagaste con ${metodoPago}`);
         break;
     case "cheque":

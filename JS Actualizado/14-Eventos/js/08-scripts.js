@@ -17,8 +17,8 @@ parrafo3.classList.add('precio');
 // crear el div...
 const info = document.createElement('div');
 info.classList.add('info');
-info.appendChild(parrafo1)
-info.appendChild(parrafo2)
+info.appendChild(parrafo1);
+info.appendChild(parrafo2);
 info.appendChild(parrafo3);
 
 // Vamos a crear la imagen

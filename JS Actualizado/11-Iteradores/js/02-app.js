@@ -3,7 +3,7 @@
 for (let i = 0; i < 10; i++) {
     if(i === 5 ){
         console.log('Cinco');
-        continue
+        continue;
     }
     
 }
@@ -15,7 +15,7 @@ const carrito = [
     {nombre: 'Xbox'},
     {nombre: 'SmarWatch'},
     {nombre: 'Agenda'},
-]
+];
 
 console.log(carrito.legnth);
 

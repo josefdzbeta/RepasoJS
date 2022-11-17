@@ -1,8 +1,8 @@
 //getElementById
 
-const formulario = document.getElementById('formulario')
+const formulario = document.getElementById('formulario');
 console.log(formulario);
 
-const noExiste = document.getElementById('no-existe')
+const noExiste = document.getElementById('no-existe');
 console.log(noExiste); //null
 

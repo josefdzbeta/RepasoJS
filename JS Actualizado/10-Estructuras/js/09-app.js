@@ -1,7 +1,7 @@
 //Operador ternario
 
-const autenticado = true
-const puedePagar = false
+const autenticado = true;
+const puedePagar = false;
 
 console.log(autenticado ? 'si está autenticado' : 'no está autenticado');
 console.log(autenticado ? 'si está autenticado' : null);

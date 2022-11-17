@@ -20,7 +20,7 @@ const producto = {
             pais: 'China'
         }
     }
-}
+};
 
 console.log(producto);
 console.log(producto.informacion);

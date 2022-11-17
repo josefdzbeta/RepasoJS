@@ -7,23 +7,23 @@ const carrito = [
     { nombre: 'Audifonos', precio: 300 },
     { nombre: 'Teclado', precio: 400 },
     { nombre: 'Celular', precio: 700 },
-]
+];
 
-let resultado
+let resultado;
 
 //Todos los productos mayor que 400
 resultado = carrito.filter((producto) => {
-    return producto.precio > 400
-})
+    return producto.precio > 400;
+});
 console.log(resultado);
 
 resultado = carrito.filter((producto) => {
-    return producto.precio >600
-})
+    return producto.precio >600;
+});
 console.log(resultado);
 
 //Traer todos menos uno
 resultado = carrito.filter ((producto) =>{
-    return producto.nombre !== 'Audifonos'
-})
+    return producto.nombre !== 'Audifonos';
+});
 console.log(resultado);

@@ -1,6 +1,6 @@
 //Traversing
 
-const navegacion = document.querySelector('.navegacion')
+const navegacion = document.querySelector('.navegacion');
 
 console.log(navegacion.firstElementChild);
 console.log(navegacion.lastElementChild);
@@ -12,7 +12,7 @@ console.log(navegacion.children); //Muestra realmente los elementos html
 // console.log(navegacion.children[1].nodeName); -- A
 // console.log(navegacion.children[1].nodeType); -- 1
 
-const card = document.querySelector('.card')
+const card = document.querySelector('.card');
 
 // console.log(card.children[1].children);
 // console.log(card.children[1].children[1].textContent);
@@ -32,5 +32,5 @@ console.log(card.parentElement.parentElement);
 
 console.log(card.nextElementSibling);
 
-const ultimoCard = document.querySelector('.card:nth-child(4)')
+const ultimoCard = document.querySelector('.card:nth-child(4)');
 console.log(ultimoCard.previousElementSibling);

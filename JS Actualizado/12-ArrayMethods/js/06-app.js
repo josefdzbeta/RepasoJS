@@ -8,9 +8,9 @@ const carrito = [
     { nombre: 'Audifonos', precio: 300 },
     { nombre: 'Teclado', precio: 400 },
     { nombre: 'Celular', precio: 700 },
-]
+];
 
 const resultado = carrito.every((producto) => {
-    return producto.precio < 1000
-})
+    return producto.precio < 1000;
+});
 console.log(resultado);

@@ -1,4 +1,4 @@
-const producto = '               Monitor 20 de pulgadas             '
+const producto = '               Monitor 20 de pulgadas             ';
 
 console.log(producto);
 console.log(producto.length);

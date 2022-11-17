@@ -10,5 +10,5 @@ console.log(numero1);
 console.log(numero2);
 console.log(numero3);
 
-const numero6 =  new Number(80)
+const numero6 =  new Number(80);
 console.log(numero6);

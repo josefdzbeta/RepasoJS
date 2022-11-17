@@ -11,12 +11,12 @@ const producto = {
             pais: 'China'
         }
     }
-}
+};
 
 
 //destructuring
 
-const { nombre, informacion, informacion: { fabricacion, fabricacion: {pais} }} = producto
+const { nombre, informacion, informacion: { fabricacion, fabricacion: {pais} }} = producto;
 
 console.log(nombre);
 console.log(informacion);

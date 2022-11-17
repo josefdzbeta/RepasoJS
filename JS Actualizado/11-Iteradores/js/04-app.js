@@ -1,6 +1,6 @@
 //While
 
-let i = 0 //inicializar while
+let i = 0; //inicializar while
 
 while (i<100) { //condicion
     
@@ -10,5 +10,5 @@ while (i<100) { //condicion
         console.log(`${i} impar`);
     }
 
-    i++ // incremento
+    i++; // incremento
 }

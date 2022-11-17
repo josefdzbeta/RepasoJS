@@ -2,9 +2,9 @@
 
 const aprendiendo = function(tecnologia, tecnologia2){
     console.log(`aprendiendo ${tecnologia} y ${tecnologia2}`);
-}
+};
 
-aprendiendo('JavaScript', 'Node.js')
+aprendiendo('JavaScript', 'Node.js');
 
 //Llaves opcionales cuando la función tiene una sola línea
 // const aprendiendo2 = (tecnologia) => `aprendiendo ${tecnologia}`;

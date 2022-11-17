@@ -1,6 +1,6 @@
 //For of
 
-const pendientes = [ 'tarea', 'comer', 'proyecto', 'Estudiar JavaScript']
+const pendientes = [ 'tarea', 'comer', 'proyecto', 'Estudiar JavaScript'];
 
 const carrito = [
     {nombre: 'Monitor de 27 pulgadas', precio: 100},
@@ -9,7 +9,7 @@ const carrito = [
     {nombre: 'Xbox', precio: 400},
     {nombre: 'SmarWatch', precio: 500},
     {nombre: 'Agenda', precio: 600},
-]
+];
 
 for (let pendiente of pendientes) {
     console.log(pendiente);

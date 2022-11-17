@@ -1,8 +1,8 @@
 //forEach y .map
 
-const pendientes = [ 'tarea', 'comer', 'proyecto', 'Estudiar JavaScript']
+const pendientes = [ 'tarea', 'comer', 'proyecto', 'Estudiar JavaScript'];
 
-pendientes.forEach( (pendiente, indice) => console.log(`${indice} ${pendiente}`) )
+pendientes.forEach( (pendiente, indice) => console.log(`${indice} ${pendiente}`) );
 
 const carrito = [
     {nombre: 'Monitor de 27 pulgadas', precio: 100},
@@ -11,10 +11,10 @@ const carrito = [
     {nombre: 'Xbox', precio: 400},
     {nombre: 'SmarWatch', precio: 500},
     {nombre: 'Agenda', precio: 600},
-]
+];
 
-carrito.forEach( (producto) => console.log(producto.nombre))
+carrito.forEach( (producto) => console.log(producto.nombre));
 
-const nuevoArray = carrito.map( (producto) => console.log('mapaMundi'))
+const nuevoArray = carrito.map( (producto) => console.log('mapaMundi'));
 
 console.log(nuevoArray);

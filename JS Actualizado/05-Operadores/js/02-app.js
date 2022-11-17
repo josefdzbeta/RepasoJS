@@ -1,6 +1,6 @@
-const numero1 = 20
-const numero2 = "20"
-const numero3 = 30
+const numero1 = 20;
+const numero2 = "20";
+const numero3 = 30;
 
 //Revisar si dos numeros son iguales
 
@@ -15,8 +15,8 @@ console.log(typeof numero2);
 
 //Diferente
 
-const password1 = 'admin'
-const password2 = 'Admin'
+const password1 = 'admin';
+const password2 = 'Admin';
 
 console.log(password1 != password2);
 console.log(numero1 !== numero2);

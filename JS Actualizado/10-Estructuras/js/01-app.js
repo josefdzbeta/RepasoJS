@@ -1,4 +1,4 @@
-const puntuacion = 100
+const puntuacion = 100;
 
 if(puntuacion == 1000){
     console.log('si es igual');

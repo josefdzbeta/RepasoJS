@@ -1,6 +1,6 @@
 //Eventos para teclados
 
-const busqueda = document.querySelector('.busqueda')
+const busqueda = document.querySelector('.busqueda');
 
 /*busqueda.addEventListener('keydown', () => {
     console.log('key down');
@@ -37,5 +37,5 @@ busqueda.addEventListener('input', (evento) => {
     if(evento.target.value === ''){
         console.log('falló la validación');
     }
-})
+});
 

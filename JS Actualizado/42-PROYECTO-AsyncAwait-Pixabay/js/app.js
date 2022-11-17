@@ -10,7 +10,7 @@ let paginaActual = 1;
 
 window.onload = () => {
     formulario.addEventListener('submit', validarFormulario);
-}
+};
 
 function validarFormulario(e) {
     e.preventDefault();
@@ -60,7 +60,7 @@ function buscarImagenes() {
         .then(resultado => {
             totalPaginas = calcularPaginas(resultado.totalHits);
             mostrarImagenes(resultado.hits);
-        })
+        });
 }
 
 // Generador que va a registrar la cantidad de elementos de acuerdo a las paginas
@@ -110,7 +110,7 @@ function mostrarImagenes(imagenes) {
 
     // Limpiar el paginador previo
     while(paginacionDiv.firstChild) {
-        paginacionDiv.removeChild(paginacionDiv.firstChild)
+        paginacionDiv.removeChild(paginacionDiv.firstChild);
     }
 
     // Generamos el nuevo HTML
@@ -137,7 +137,7 @@ function imprimirPaginador() {
             paginaActual = value;
 
             buscarImagenes();
-        }
+        };
 
         paginacionDiv.appendChild(boton);
     }

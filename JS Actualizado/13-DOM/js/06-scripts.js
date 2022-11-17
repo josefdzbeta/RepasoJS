@@ -1,4 +1,4 @@
-const encabezado = document.querySelector('.contenido-hero h1').textContent
+const encabezado = document.querySelector('.contenido-hero h1').textContent;
 console.log(encabezado);
 
 
@@ -9,5 +9,5 @@ console.log(encabezado);
 // const nuevoHeading = 'nuevo heading'
 // document.querySelector('.contenido-hero h1').textContent = nuevoHeading
 
-const imagen = document.querySelector('.card img')
-imagen.src = 'img/hacer2.jpg'
+const imagen = document.querySelector('.card img');
+imagen.src = 'img/hacer2.jpg';
