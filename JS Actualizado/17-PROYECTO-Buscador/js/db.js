@@ -1,4 +1,13 @@
-const autos = [
+const coches = [
+	{
+		marca: 'Mercedes Benz',
+		modelo: 'GT Black Series',
+		year: 2022,
+		precio: 250000,
+		puertas: 2,
+		color: 'Negro',
+		transmision: 'automatico'
+	},
 	{
 		marca: 'BMW',
 		modelo: 'Serie 3',
