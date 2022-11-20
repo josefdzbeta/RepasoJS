@@ -6,7 +6,7 @@
 //Forma imperativa
 const carrito = [];
 
-//Definir un producto
+//Definir un objeto
 
 const producto = {
     nombre: 'Monitor de 20 pulgadas',
