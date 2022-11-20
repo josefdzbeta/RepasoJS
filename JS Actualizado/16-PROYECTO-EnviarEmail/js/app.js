@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const email = {
         email: '',
         asunto: '',
-        mensaje: ''
+        mensaje: '',
+        cc: ''
     };
     console.log(email);
 
@@ -11,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const inputEmail = document.querySelector('#email');
     const inputAsunto = document.querySelector('#asunto');
     const inputMensaje = document.querySelector('#mensaje');
+    const inputCC = document.querySelector('#cc');
     const formulario = document.querySelector('#formulario');
     const btnSubmit = document.querySelector('#formulario button[type="submit"]');
     const btnReset = document.querySelector('#formulario button[type="reset"]');
@@ -20,6 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
     inputEmail.addEventListener('input', validar);
     inputAsunto.addEventListener('input', validar);
     inputMensaje.addEventListener('input', validar);
+    inputCC.addEventListener('input', validar); //opcional
+    
+    
 
     formulario.addEventListener('submit', enviarEmail);
 
@@ -50,10 +55,10 @@ document.addEventListener('DOMContentLoaded', function () {
             }, 3000);
         }, 3000);
     }
-   
+
     function validar(e){
-        //Eliminamos espacios en blanco de los inputs y comprobamos si están vacíos
-        if(e.target.value.trim() === ''){
+        //Eliminamos espacios en blanco de los inputs
+        if(e.target.value.trim() === '' && e.target.id !== 'cc'){
 
             // Pasamos mensaje e input de referencia para hacer appendchild del mensaje
             mostrarAlerta(`El campo ${e.target.id} es obligatorio`, e.target.parentElement);
@@ -63,6 +68,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if(e.target.id === 'email' && !validarEmail(e.target.value)){
+            mostrarAlerta('El email no es válido', e.target.parentElement);
+            email[e.target.name] = '';
+            comprobarEmail();
+            return;
+        }
+
+        if(e.target.id === 'cc' && !validarEmail(e.target.value)){
             mostrarAlerta('El email no es válido', e.target.parentElement);
             email[e.target.name] = '';
             comprobarEmail();
@@ -110,11 +122,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function comprobarEmail() {
         console.log(email);
-        if(Object.values(email).includes('')){
 
+        // if(Object.values(email).includes('')){ //Comento este código para añadir el campo opcional CC
+
+        //     btnSubmit.classList.add('opacity-50');
+        //     btnSubmit.disabled = true;
+
+        //     return;
+        // }
+        if(email.email === '' || email.asunto === '' || email.mensaje === ''){
             btnSubmit.classList.add('opacity-50');
             btnSubmit.disabled = true;
-
             return;
         }
             btnSubmit.classList.remove('opacity-50');
@@ -128,6 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
          email.email ='';
          email.mensaje ='';
          email.asunto ='';
+         email.cc ='';
  
          formulario.reset();
          comprobarEmail();
