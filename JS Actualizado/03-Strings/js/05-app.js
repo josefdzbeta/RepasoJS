@@ -14,7 +14,7 @@ console.log(producto.slice(2,1)); // No hace nada, el primer número debe ser ma
 console.log(producto.substring(0,10));
 console.log(producto.substring(2,1)); //substring si corta
 
-const usuario = 'Juan';
+const usuario = 'Jose';
 console.log(usuario.substring(0,1));
 
 console.log(usuario.charAt(0));

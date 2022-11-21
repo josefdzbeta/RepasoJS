@@ -1,6 +1,6 @@
 const producto = 'Monitor de 20 Pulgadas';
 
-const texto = 'en promoción'.repeat(3); //Si es decimal, el número se redondea
+const texto = 'en promoción'.repeat(3); 
 
 console.log(texto);
 console.log(`${producto} ${texto} !!!`);
@@ -12,5 +12,5 @@ console.log(actividad.split(" "));
 const hobbies = 'Leer, caminar, aprender a caminar, aprender a programar';
 console.log(hobbies,split(','));
 
-const tweet = "Aprendiendo #JavaScriptModerno";
+const tweet = "Aprendiendo #JavaScript";
 console.log(tweet.split('#'));
