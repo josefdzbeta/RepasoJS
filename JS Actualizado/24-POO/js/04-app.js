@@ -29,7 +29,8 @@ class Cliente{
 
 
 const jose = new Cliente('Jose', 400);
-console.log(jose.#nombre); //Error, propiedad privada //No podemos acceder desde fuera
+console.log(jose.mostrarInformacion());
+console.log(jose.#nombre); //Error, propiedad privada //No podemos acceder desde el objeto
 
 */
 
