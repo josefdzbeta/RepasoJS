@@ -1,8 +1,7 @@
 //un set te permite crear una lista sin duplicados
-
 const carrito = new Set();
 
-//Set methods
+//Añadir valor
 carrito.add('Camisa');
 carrito.add('Disco #1');
 carrito.add('Disco #2');
