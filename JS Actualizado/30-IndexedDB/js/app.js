@@ -6,14 +6,14 @@
 let DB;
 
 document.addEventListener('DOMContentLoaded',() =>{
-    crmDB();
+    crearDB();
 
     setTimeout(() => {
         crearCliente();
     }, 5000);
 });
 
-function crmDB() {
+function crearDB() {
     //Crear base de datos 1.0
     let crmDB = window.indexedDB.open('crm', 1); //Asignar nombre como string y versión
 
