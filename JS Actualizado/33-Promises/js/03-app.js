@@ -15,15 +15,19 @@ const aplicarDescuento = new Promise((resolve, reject) => {
 aplicarDescuento
     //Si se cumple
     .then(resultado =>{
-        console.log(resultado); 
+        descuento(mensaje)/*console.log(resultado)*/; 
     })
     //Si falla
     .catch(error => {
         console.log(error);
     });
 
+    function descuento(mensaje) {
+        console.log(mensaje);
+    }
 
-console.log(aplicarDescuento);
+
+
 
 //Hay 3 valores posibles en los promises
 //Fulfilled - el Promise se cumplió
