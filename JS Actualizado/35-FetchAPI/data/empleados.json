@@ -2,19 +2,19 @@
      {
           "id" : 1,
           "nombre" : "Juan",
-          "empresa" : "Código con Juan",
+          "empresa" : "JAFB",
           "trabajo" : "Desarrollador Web"
      },
      {
           "id" : 2,
           "nombre" : "Alejandra",
-          "empresa" : "Código con Juan",
+          "empresa" : "JAFB",
           "trabajo" : "Diseñadora"
      },
      {
           "id" : 3,
           "nombre" : "Pedro",
-          "empresa" : "Código con Juan",
+          "empresa" : "JAFB",
           "trabajo" : "Aplicaciones Móviles"
      }
 ]
