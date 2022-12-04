@@ -1,4 +1,5 @@
 const resultado = document.querySelector('#resultado');
+const formulario = document.querySelector('#formulario');
 const paginacionDiv = document.querySelector('#paginacion');
 
 
@@ -9,12 +10,12 @@ let paginaActual = 1;
 
 
 
-window.onload = () =>{
-    const formulario = document.querySelector('#formulario');
+window.onload = () => {
     formulario.addEventListener('submit', validarFormulario);
 };
 
 function validarFormulario(e) {
+    
     e.preventDefault();
 
     const terminoBusqueda = document.querySelector('#termino').value;
@@ -57,12 +58,10 @@ function buscarImagenes() {
 
     
     fetch(url)
-        .then(respuesta => {
-            return respuesta.json();
-        })
+        .then(respuesta => respuesta.json())
         .then(resultado =>{
             totalPaginas = calcularPaginas(resultado.totalHits);
-            return mostrarImagenes(resultado.hits);
+            mostrarImagenes(resultado.hits);
         });
 }
 
@@ -70,9 +69,7 @@ function buscarImagenes() {
 function *crearPaginador(total) {
     //Registramos cuántas páginas hay
     for (let i = 1; i <= total; i++) {
-        
         yield i;
-        
     }
 }
 
@@ -82,7 +79,7 @@ function calcularPaginas(total) {
 
 function mostrarImagenes(imagenes) {
     while(resultado.firstChild){
-        resultado.remove(resultado.firstChild);
+        resultado.removeChild(resultado.firstChild);
     }
 
     //Iterar en el array de imágenes y construir HTML
@@ -110,6 +107,7 @@ function mostrarImagenes(imagenes) {
     while(paginacionDiv.firstChild){
         paginacionDiv.removeChild(paginacionDiv.firstChild);
     }
+    
     imprimirPaginador();
     
 }
