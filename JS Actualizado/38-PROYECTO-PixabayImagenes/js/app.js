@@ -1,5 +1,4 @@
 const resultado = document.querySelector('#resultado');
-const formulario = document.querySelector('#formulario');
 const paginacionDiv = document.querySelector('#paginacion');
 
 
@@ -11,6 +10,7 @@ let paginaActual = 1;
 
 
 window.onload = () =>{
+    const formulario = document.querySelector('#formulario');
     formulario.addEventListener('submit', validarFormulario);
 };
 
@@ -49,7 +49,9 @@ function mostrarAlerta(mensaje) {
 }
 
 function buscarImagenes() {
+    
     const termino = document.querySelector('#termino').value;
+
     const key = '31824754-7322f30b9c0e926234f5346c8';
     const url = `https://pixabay.com/api/?key=${key}&q=${termino}&per_page=${registrosPorPagina}&page=${paginaActual}`;
 
@@ -115,7 +117,7 @@ function mostrarImagenes(imagenes) {
 function imprimirPaginador() {
     iterador = crearPaginador(totalPaginas);
 
-    while (true) {
+    while(true) {
         const {value, done} = iterador.next();
 
         if(done)return;
