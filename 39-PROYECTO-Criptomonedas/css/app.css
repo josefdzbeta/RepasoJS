@@ -56,8 +56,10 @@ input[type="submit"]{
     font-weight: bold;
     color: white;
 }
-
-
+.moneda{
+    text-align: center;
+    transform: scale(2, 2);
+}
 .resultado p {
     font-size: 18px!important;
 }
@@ -101,7 +103,12 @@ p.precio{
     -webkit-animation-delay: -0.16s;
     animation-delay: -0.16s;
 }
-
+@media only screen and (max-width: 600px) {
+    .media {
+      top: 0;
+      right: 0;
+    }
+  }
 @-webkit-keyframes sk-bouncedelay {
     0%, 80%, 100% { -webkit-transform: scale(0) }
     40% { -webkit-transform: scale(1.0) }
