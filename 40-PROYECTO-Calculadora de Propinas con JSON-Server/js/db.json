@@ -1,0 +1,106 @@
+{
+    "platos":[
+        {
+            "id": 1,
+            "nombre": "Pizza al carbón",
+            "precio": 13,
+            "categoria": 1
+        }, 
+        {
+            "id": 2,
+            "nombre": "Pizza Vegetariana",
+            "precio": 12,
+            "categoria": 1
+        },
+        {
+            "id": 3,
+            "nombre": "Pizza Vegana",
+            "precio": 12,
+            "categoria": 1
+        },
+        {
+            "id": 4,
+            "nombre": "Pizza a la Leña pequeña",
+            "precio": 12,
+            "categoria": 1
+        },
+        {
+            "id": 5,
+            "nombre": "Pizza a la Leña Grande",
+            "precio": 14,
+            "categoria": 1
+        },
+        {
+            "id": 6,
+            "nombre": "Spaghettis a la carbonara con trufa",
+            "precio": 16,
+            "categoria": 1
+          },
+          {
+            "id": 7,
+            "nombre": "Hamburguesa Ibérica",
+            "precio": 13,
+            "categoria": 1
+          },
+          {
+            "id": 8,
+            "nombre": "Sushi Uramaki Volcano 20p",
+            "precio": 22,
+            "categoria": 1
+          },
+          {
+            "id": 9,
+            "nombre": "Rib Eye 800g",
+            "precio": 25,
+            "categoria": 1
+          },
+          {
+            "id": 10,
+            "nombre": "Heineken",
+            "precio": 3,
+            "categoria": 2
+          },
+          {
+            "id": 11,
+            "nombre": "Nestea",
+            "precio": 1,
+            "categoria": 2
+          },
+          {
+            "id": 12,
+            "nombre": "Gin Tonic",
+            "precio": 6,
+            "categoria": 2
+          },
+          {
+            "id": 13,
+            "nombre": "Tarta de Chocolate",
+            "precio": 5,
+            "categoria": 3
+          },
+          {
+            "id": 14,
+            "nombre": "Tarta de Limon",
+            "precio": 5,
+            "categoria": 3
+          },
+          {
+            "id": 15,
+            "nombre": "Tarta de Queso",
+            "precio": 6,
+            "categoria": 3
+          },
+          {
+            "id": 16,
+            "nombre": "Café Americano",
+            "precio": 1,
+            "categoria": 2
+          },
+          {
+            "id": 17,
+            "nombre": "Café Capuccino",
+            "precio": 1,
+            "categoria": 2
+          }
+    ]
+}
