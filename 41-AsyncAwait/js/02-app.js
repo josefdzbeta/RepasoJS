@@ -17,7 +17,7 @@ function descargarClientes() {
 
 
 //La función padre tiene que tener async, la función hijo await
-//Asyn await
+//Async await
 async function ejecutar() {
     
     try {
