@@ -8,3 +8,12 @@ const carrito = [
     { nombre: 'Bocinas', precio: 300},
     { nombre: 'Laptop', precio: 800},
 ];
+
+//.map crea un nuevo array y forEach lo itera
+
+const obtenerNombres = producto => {
+    return producto.nombre
+}
+const resultado = carrito.map(obtenerNombres);
+console.log(resultado);
+console.log(carrito);
