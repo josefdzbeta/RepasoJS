@@ -59,6 +59,7 @@ function selectCriptomonedas(criptomonedas) {
     const fin = performance.now()
     console.log(fin - inicio);
     debugger;
+    
 }
 
 
