@@ -16,6 +16,7 @@
     "regenerator-runtime": "^0.13.11"
   },
   "dependencies": {
-    "core-js": "^3.26.1"
+    "core-js": "^3.26.1",
+    "latest-version": "^7.0.0"
   }
 }
