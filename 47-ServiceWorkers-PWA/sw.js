@@ -6,24 +6,23 @@
 const nombreCache = 'apv-v1';
 //Cachear archivos
 const archivos = [
-    '/',
     '/index.html',
+    '/error.html',
     '/css/bootstrap.css',
     '/css/styles.css',
     '/js/app.js',
-    '/js/apv.js',
-    '/error.html'
+    '/js/apv.js'
 ];
 
 //Una vez instalado el serviceWorker..
 //Sólo se ejecuta una vez
-self.addEventListener('install', (e) =>{
+self.addEventListener('install', (e) => {
     console.log('Instalado el Service Worker');
 
     //Esperar hasta que se descarguen todos los archivos de cache
     e.waitUntil(
         caches.open(nombreCache)
-            .then(cache =>{
+            .then(cache => {
                 console.log('cache');
                 cache.addAll(archivos);
             })
@@ -32,30 +31,34 @@ self.addEventListener('install', (e) =>{
 
 });
 
+
 //Activar serviceWorker
-self.addEventListener('activate', (e) =>{
+self.addEventListener('activate', (e) => {
     console.log('ServiceWorker Activado');
+    // Actualizar PWA
     e.waitUntil(
         caches.keys()
-            .then( (keys) => {
-                return Promise.all(
-                    keys.filter( key => key !==nombreCache )
-                        .map( key => caches.delete(key)) //Borra las versiones anteriores de la cache
+            .then(keys => {
+                console.log(keys);
+
+                return Promise.all(keys
+                    .filter(key => key !== nombreCache)
+                    .map(key => caches.delete(key)) // borrar los demas
                 )
             })
-
     )
 });
 
+
 //Evento fetch para descargar archivos estáticos
-self.addEventListener('fetch', (e) =>{
+self.addEventListener('fetch', e => {
     console.log('Fetch...', e);
 
     e.respondWith(
         caches.match(e.request)
-            .then( respuestaCache => {
+            .then(respuestaCache => {
                 return respuestaCache || fetch(e.request);
             })
-            .catch( () => caches.match('/error.html'))
-    )
+            .catch(() => caches.match('error.html'))
+    );
 });
